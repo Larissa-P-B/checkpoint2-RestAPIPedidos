@@ -19,18 +19,18 @@ public class Pedido {
     private Long id;
 
     @NotEmpty(message = "O nome do cliente é obrigatório")
-    private String clientName;
+    private String clienteNome;
 
-    private LocalDate orderDate;
+    private LocalDate pedidoData;
 
     @DecimalMin(value = "0.0", message = "O valor não pode ser negativo")
     @Positive(message = "O valor deve ser positivo")
-    private BigDecimal totalValue;
+    private BigDecimal valorTotal;
 
     @PrePersist
     public void prePersist() {
-        if (this.orderDate == null) {
-            this.orderDate = LocalDate.now();
+        if (this.pedidoData == null) {
+            this.pedidoData = LocalDate.now();
         }
     }
 

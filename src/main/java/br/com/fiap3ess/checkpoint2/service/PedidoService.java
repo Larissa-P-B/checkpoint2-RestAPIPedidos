@@ -29,8 +29,8 @@ public class PedidoService {
 
     public Pedido updatePedido(Long id, Pedido pedido) {
         return pedidoRepository.findById(id).map(existing -> {
-            existing.setClientName(pedido.getClientName());
-            existing.setTotalValue(pedido.getTotalValue());
+            existing.setClienteNome(pedido.getClienteNome());
+            existing.setValorTotal(pedido.getValorTotal());
             return pedidoRepository.save(existing);
         }).orElseThrow(() -> new EntityNotFoundException("Pedido não encontrado"));
     }
