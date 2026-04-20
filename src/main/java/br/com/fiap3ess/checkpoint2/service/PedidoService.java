@@ -14,7 +14,7 @@ public class PedidoService {
     @Autowired
     private PedidoRepository pedidoRepository;
 
-    public Pedido criarPedido(Pedido pedido) {
+    public Pedido criarPedido(Pedido  pedido) {
         return pedidoRepository.save(pedido);
     }
 
