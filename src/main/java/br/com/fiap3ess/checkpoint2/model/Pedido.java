@@ -19,12 +19,14 @@ public class Pedido {
     private Long id;
 
     @NotEmpty(message = "O nome do cliente é obrigatório")
+    @Column(name = "cliente_nome")
     private String clienteNome;
-
+    @Column(name = "pedido_data")
     private LocalDate pedidoData;
 
     @DecimalMin(value = "0.0", message = "O valor não pode ser negativo")
     @Positive(message = "O valor deve ser positivo")
+    @Column(name = "valor_total")
     private BigDecimal valorTotal;
 
     @PrePersist
