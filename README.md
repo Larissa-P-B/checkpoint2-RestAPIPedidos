@@ -49,8 +49,6 @@ server.port=8085
 
 # MYSQL
 spring.datasource.url=jdbc:mysql://localhost:3306/checkpoint2restapi?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=1234
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 # JPA
