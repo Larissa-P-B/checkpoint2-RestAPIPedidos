@@ -7,3 +7,10 @@ CREATE TABLE pedidos (
 
 INSERT INTO pedidos (cliente_nome, pedido_data, valor_total)
 VALUES ('Primeiro Pedido', CURRENT_DATE, 100.00);
+
+INSERT INTO pedidos (cliente_nome, pedido_data, valor_total)
+VALUES ('Wilson Hoeger', CURRENT_DATE, 3495.99);
+
+INSERT INTO pedidos (cliente_nome, pedido_data, valor_total)
+VALUES ('Max Ullrich', CURRENT_DATE, 245.87);
+
