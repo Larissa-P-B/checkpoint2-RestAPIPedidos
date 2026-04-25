@@ -23,13 +23,13 @@ API REST desenvolvida com Spring Boot para gerenciamento de pedidos, utilizando 
 ---
 
 ## 📁 Estrutura do Projeto
- br.com.fiap3ess.checkpoint2
- │
- ├── controller → Endpoints REST
- ├── service → Regras de negócio
- ├── repository → Acesso ao banco (JPA)
- ├── model → Entidades
- ├── config → Configurações (Swagger)
+ br.com.fiap3ess.checkpoint2<br>
+ |<br>
+ ├── controller → Endpoints REST<br>
+ ├── service → Regras de negócio<br>
+ ├── repository → Acesso ao banco (JPA)<br>
+ ├── model → Entidades<br>
+ ├── config → Configurações (Swagger)<br>
 
 
 ---
@@ -73,6 +73,40 @@ springdoc.swagger-ui.path=/swagger-ui.html
 
 http://localhost:8085/pedidos
 
-🔹 Criar pedido
-## POST /pedidos
+# 🔹 Criar pedido
+### POST /pedidos
+```
+ {
+   "clienteNome": "João Silva",
+    "valorTotal": 1554.90
+ }
+```
+
+# 🔹 Listar pedidos
+### GET /pedidos
+
+# 🔹 Buscar por ID
+### GET /pedidos/{id}
+
+# 🔹 Atualizar pedido
+### PUT /pedidos/{id}
+```
+ {
+   "clienteNome": "Ms.Rudolph Waters",
+   "valorTotal": 3599.99
+ }
+```
+
+# 🔹 Deletar pedido
+### DELETE /pedidos/{id}
+---
+
+## Swagger (Documentação da API)
+
+Acesse no navegador:
+
+```
+ http://localhost:8085/swagger-ui/index.html
+```
+
 
